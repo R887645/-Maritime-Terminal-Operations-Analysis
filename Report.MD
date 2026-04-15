@@ -36,8 +36,7 @@ This project was designed to answer the core question:
 
 ## Tools Used
 - **Power Query** – Data cleaning and transformation  
-- **Power BI** – Data modeling, dashboard design, visualization  
-- **Microsoft PowerPoint** – Wireframing dashboard layout and storytelling flow  
+- **Power BI** – Data modeling, dashboard design, visualization, Wireframing dashboard layout and storytelling flow  
 
 ---
 
@@ -62,11 +61,11 @@ This project was designed to answer the core question:
 ## Calculated Measures (DAX)
 - **Terminal Utilization %**  
 - **Avg Utilization**  
-- **Bottleneck Tier classification**  
 - **Recovery Months (Suez)**  
 - **Efficiency Score**  
 - **Total Cargo Movements, Total Containers, Avg Move Duration**  
 - **MoM Container Volume Change, YoY Growth**  
+- ** I also added some calculation columns, like Bottleneck Tier Classification, and Suez Period**, and lots more.
 
 ---
 
@@ -81,7 +80,7 @@ This project was designed to answer the core question:
 
 ## Key Insights
 - **Suez Impact:** Avg duration spiked 4.26% post‑blockage; recovery took several months.  
-- **Regional Drivers:** EMEA hub contributed the highest cargo movements but also longer durations.  
+- **Regional Drivers:** EMEA hub contributed the highest cargo movements, but also longer durations.  
 - **Terminal Bottlenecks:** 42 terminals operated above 85% utilization, creating pressure.  
 - **Efficiency Gaps:** Bottom 5 terminals dragged throughput rates below 480.  
 - **Shift Balance:** Day vs night split was nearly even, but certain hubs leaned heavily on night shifts.  
@@ -94,14 +93,14 @@ This project was designed to answer the core question:
 - Investigate EMEA hub delays despite high throughput.  
 - Optimize allocation across day/night shifts to balance workloads.  
 - Strengthen resilience planning for future disruptions.  
-- Focus efficiency programs on bottom 5 terminals to close the gap toward the 15% reduction target.  
+- Focus efficiency programs on the bottom 5 terminals to close the gap toward the 15% reduction target.  
 
 ---
 
 ## Dashboard / Visualization
-The Power BI dashboard contains **4 main pages**:
+The Power BI Report contains **4 main pages**:
 
-1. **Global Cargo Overview**  
+1. **Global Cargo Performance Overview**  
    - KPIs: Total Movements, Total Containers, Avg Duration, Target Gauge  
    - Trends: Avg Duration line chart, Container split by vessel category, Movements by hub  
 
