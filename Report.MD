@@ -1,0 +1,154 @@
+# Maritime Terminal Operations Dashboard  
+**Reducing Cargo Movement Times & Identifying Bottlenecks**
+
+### Project Description
+The goal of this project is to analyze global maritime terminal operations to uncover inefficiencies, bottlenecks, and disruption impacts. Using cargo movement data across hubs, terminals, and vessel categories, the dashboard helps leadership reduce average movement times by 15% and optimize terminal allocation.
+
+---
+
+## Business Problem / Objective
+Global Maritime Solutions wants to move from raw cargo and terminal data to actionable insights.  
+
+Leadership needs clear visibility into:  
+- How container volumes and movement duration evolve, including disruption impacts and recovery patterns following the **2021 Suez Canal incident**  
+- Which regional hubs (EMEA, APAC, AMER, LATAM) and individual terminals contribute most to overall cargo throughput and operational delays  
+- What differentiates high‑performing vs underperforming terminals within the same region  
+- Whether terminal utilization levels are correlated with longer movement times and potential infrastructure bottlenecks  
+
+This project was designed to answer the core question:  
+**“How can the company reduce cargo movement times by 15% and optimize terminal allocation?”**
+
+---
+
+## Dataset Overview
+- **Data Source:** Maritime Terminal Operations dataset (Onyx Data Challenge)  
+- **Time Period Covered:** 2021 – 2024  
+- **Volume:** 15K cargo movements, 8M containers, 50 active terminals  
+- **Format:** CSV/Excel files  
+- **Key Columns:**  
+  - terminal_name, regional_hub  
+  - container_count, move_duration, throughput_rate  
+  - vessel_category, vessel_name  
+  - date_id, shift (day/night)  
+  - Suez Period (pre/post disruption)  
+
+---
+
+## Tools Used
+- **Power Query** – Data cleaning and transformation  
+- **Power BI** – Data modeling, dashboard design, visualization  
+- **Microsoft PowerPoint** – Wireframing dashboard layout and storytelling flow  
+
+---
+
+## Data Cleaning & Preparation
+- Removed duplicates and standardized terminal, vessel, and hub naming  
+- Converted numeric fields (container_count, move_duration) to proper data types  
+- Built dimensional tables (`dim_terminal`, `dim_vessel`, `dim_time`, `Calendar`) linked to `fact_cargo_movements`  
+- Created calculated fields for utilization %, bottleneck tiers, and efficiency scores  
+
+**Calendar Table Created for Time Intelligence:**  
+- Date, Year, Month, MonthNum, Quarter, HalfMonth  
+
+---
+
+## Data Modelling
+- Star schema with `fact_cargo_movements` at the center  
+- Relationships established with terminal, vessel, and time dimensions  
+- Calendar table enabled rolling averages and disruption period analysis  
+
+---
+
+## Calculated Measures (DAX)
+- **Terminal Utilization %**  
+- **Avg Utilization**  
+- **Bottleneck Tier classification**  
+- **Recovery Months (Suez)**  
+- **Efficiency Score**  
+- **Total Cargo Movements, Total Containers, Avg Move Duration**  
+- **MoM Container Volume Change, YoY Growth**  
+
+---
+
+## Key Questions & Analysis
+- How did container volumes and movement duration evolve during and after the Suez disruption?  
+- Which hubs and terminals drive throughput vs delays?  
+- What differentiates efficient vs bottleneck terminals?  
+- Is high utilization correlated with longer movement times?  
+- How close are we to the 15% reduction target?  
+
+---
+
+## Key Insights
+- **Suez Impact:** Avg duration spiked 4.26% post‑blockage; recovery took several months.  
+- **Regional Drivers:** EMEA hub contributed the highest cargo movements but also longer durations.  
+- **Terminal Bottlenecks:** 42 terminals operated above 85% utilization, creating pressure.  
+- **Efficiency Gaps:** Bottom 5 terminals dragged throughput rates below 480.  
+- **Shift Balance:** Day vs night split was nearly even, but certain hubs leaned heavily on night shifts.  
+- **Target Progress:** Current avg duration = 20.88 days vs target 17.75 (still above goal).  
+
+---
+
+## Recommendations
+- Prioritize interventions at bottleneck terminals above 85% utilization.  
+- Investigate EMEA hub delays despite high throughput.  
+- Optimize allocation across day/night shifts to balance workloads.  
+- Strengthen resilience planning for future disruptions.  
+- Focus efficiency programs on bottom 5 terminals to close the gap toward the 15% reduction target.  
+
+---
+
+## Dashboard / Visualization
+The Power BI dashboard contains **4 main pages**:
+
+1. **Global Cargo Overview**  
+   - KPIs: Total Movements, Total Containers, Avg Duration, Target Gauge  
+   - Trends: Avg Duration line chart, Container split by vessel category, Movements by hub  
+
+2. **Disruption Impact (Suez 2021)**  
+   - KPIs: Movements Lost, Container Volume Change, Duration Spike, Recovery Months  
+   - Charts: Monthly trend with disruption marker, MoM container change, Recovery tracker  
+
+3. **Regional Hub & Terminal Analysis**  
+   - KPIs: Active Terminals, Throughput Rate  
+   - Charts: Scatter plot (Movements vs Duration), Bottom 5 terminals, Hub comparison bar chart, Shift split  
+
+4. **Efficiency & Bottleneck Watch**  
+   - KPIs: Avg Utilization %, Terminals above 85%, Bottleneck Pressure Score, Efficiency Score  
+   - Charts: Scatter plot (Utilization vs Duration, Bottleneck Tier legend), Efficiency rankings, Day vs Night split  
+
+---
+
+## How This Project Sharpened My Skills
+- Advanced Power BI dashboard design and storytelling  
+- Creating dynamic DAX measures for utilization, bottlenecks, and recovery analysis  
+- Implementing interactive filters and slicers for hub/terminal drilldowns  
+- Translating operational data into actionable leadership insights  
+- Structuring dashboards to tell a clear narrative: **Overview → Disruption → Hubs → Bottlenecks**
+
+---
+
+## Challenges Faced
+- Designing bottleneck tier logic with median reference lines  
+- Configuring disruption recovery calculations (Recovery Months)  
+- Balancing visual clarity vs detail (removing duplicate scatter plots, replacing raw tables with ranked charts)  
+
+---
+
+## Conclusion
+This project transformed raw maritime operations data into actionable insights. The analysis helped leadership:  
+- Understand disruption impacts and recovery timelines  
+- Identify regional hub drivers and terminal bottlenecks  
+- Track progress toward the 15% reduction target  
+- Optimize terminal allocation for efficiency gains  
+
+---
+
+## Limitations
+- The dataset does not include external factors (weather, geopolitical risks, competitor activity).  
+- Marketing spend and customer demand data were not captured.  
+- Including predictive models could strengthen future planning.  
+
+---
+
+👋 I am **Abdul-Azeez Rofiah Kehinde**, Let's connect [LinkedIn](https://www.linkedin.com/in/rofiah-abdul-azeez/) 
