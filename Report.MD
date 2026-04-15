@@ -65,7 +65,7 @@ This project was designed to answer the core question:
 - **Efficiency Score**  
 - **Total Cargo Movements, Total Containers, Avg Move Duration**  
 - **MoM Container Volume Change, YoY Growth**  
-- ** I also added some calculation columns, like Bottleneck Tier Classification, and Suez Period**, and lots more.
+- **Added some calculation columns, like Bottleneck Tier Classification, and Suez Period**, and lots more.
 
 ---
 
