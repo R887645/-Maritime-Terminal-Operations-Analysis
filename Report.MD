@@ -80,11 +80,12 @@ This project was designed to answer the core question:
 
 ## Key Insights
 - **Suez Impact:** Avg duration spiked 4.26% post‑blockage; recovery took several months.  
-- **Regional Drivers:** EMEA hub contributed the highest cargo movements, but also longer durations.  
+- **Regional Drivers:** EMEA leads with 5.7K movements, but APAC outperforms on throughput rate at 501.35, proving volume and efficiency are not the same thing. 
 - **Terminal Bottlenecks:** 42 terminals operated above 85% utilization, creating pressure.  
-- **Efficiency Gaps:** Bottom 5 terminals dragged throughput rates below 480.  
+- **Efficiency Gaps:** Bottom 5 terminals averaged throughput rates between 471-481, with Matthew Jones terminal at the lowest at 471
 - **Shift Balance:** Day vs night split was nearly even, but certain hubs leaned heavily on night shifts.  
 - **Target Progress:** Current avg duration = 20.88 days vs target 17.75 (still above goal).  
+- LATAM and APAC hubs consistently performed below the global average movement duration, making them the most time-efficient regions despite lower volumes
 
 ---
 
@@ -131,6 +132,7 @@ The Power BI Report contains **4 main pages**:
 - Designing bottleneck tier logic with median reference lines  
 - Configuring disruption recovery calculations (Recovery Months)  
 - Balancing visual clarity vs detail (removing duplicate scatter plots, replacing raw tables with ranked charts)  
+- DAX measures cannot be used as legends or slicers in Power BI, resolved by creating calculated columns for Bottleneck Tier Classification and Suez Period instead
 
 ---
 
