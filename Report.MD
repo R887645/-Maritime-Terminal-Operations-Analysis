@@ -4,7 +4,7 @@
 ![My Image](https://github.com/R887645/-Maritime-Terminal-Operations-Analysis/blob/main/Maritime%20Terminal%20Operation%20Analysis%20.png?raw=true)
 
 ### Project Description
-I stepped into the role of a Senior Operations Analyst at the company to analyze global maritime terminal operations to uncover inefficiencies, bottlenecks, and disruption impacts. Using cargo movement data across hubs, terminals, and vessel categories, the dashboard helps leadership reduce average movement times by 15% and optimize terminal allocation.
+I participated in this month of April's Onyx Data Challenge, where I stepped into the role of a Senior Operations Analyst at the company to analyze global maritime terminal operations to uncover inefficiencies, bottlenecks, and disruption impacts. Using cargo movement data across hubs, terminals, and vessel categories, the dashboard helps leadership reduce average movement times by 15% and optimize terminal allocation.
 
 ---
 
