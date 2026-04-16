@@ -171,3 +171,5 @@ This project transformed raw maritime operations data into actionable insights. 
 ---
 
 👋 I am **Abdul-Azeez Rofiah Kehinde**, Let's connect [LinkedIn](https://www.linkedin.com/in/rofiah-abdul-azeez/) 
+
+You can also read my article on Medium](https://medium.com/p/a916172af208?postPublishedType=initial)
