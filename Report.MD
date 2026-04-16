@@ -1,5 +1,7 @@
-# Maritime Terminal Operations Dashboard  
+# Maritime Terminal Operations Analysis
 **Reducing Cargo Movement Times & Identifying Bottlenecks**
+
+![My Image](https://github.com/R887645/-Maritime-Terminal-Operations-Analysis/blob/main/Maritime%20Terminal%20Operation%20Analysis%20.png?raw=true)
 
 ### Project Description
 The goal of this project is to analyze global maritime terminal operations to uncover inefficiencies, bottlenecks, and disruption impacts. Using cargo movement data across hubs, terminals, and vessel categories, the dashboard helps leadership reduce average movement times by 15% and optimize terminal allocation.
@@ -36,7 +38,7 @@ This project was designed to answer the core question:
 
 ## Tools Used
 - **Power Query** – Data cleaning and transformation  
-- **Power BI** – Data modeling, dashboard design, visualization, Wireframing dashboard layout and storytelling flow  
+- **Power BI** – Data modeling, dashboard design, visualization, Wireframing dashboard layout, and storytelling flow  
 
 ---
 
@@ -49,12 +51,16 @@ This project was designed to answer the core question:
 **Calendar Table Created for Time Intelligence:**  
 - Date, Year, Month, MonthNum, Quarter, HalfMonth  
 
+![My Image](https://github.com/R887645/-Maritime-Terminal-Operations-Analysis/blob/main/Terminal_Datacleaning.png?raw=true)
+
 ---
 
 ## Data Modelling
 - Star schema with `fact_cargo_movements` at the center  
 - Relationships established with terminal, vessel, and time dimensions  
 - Calendar table enabled rolling averages and disruption period analysis  
+
+![My Image](https://github.com/R887645/-Maritime-Terminal-Operations-Analysis/blob/main/Maritime%20Onyx_Data%20Modelling.png?raw=true)
 
 ---
 
@@ -66,6 +72,10 @@ This project was designed to answer the core question:
 - **Total Cargo Movements, Total Containers, Avg Move Duration**  
 - **MoM Container Volume Change, YoY Growth**  
 - **Added some calculation columns, like Bottleneck Tier Classification, and Suez Period**, and lots more, as I encountered the challenge of not being able to use the measures as legend, so I used calculated columns instead to fix it.
+
+!My Image](https://github.com/R887645/-Maritime-Terminal-Operations-Analysis/blob/main/Terminal_dax%202.png?raw=true)
+
+![My Image](https://github.com/R887645/-Maritime-Terminal-Operations-Analysis/blob/main/Terminal_Calc%20column.png?raw=true)
 
 ---
 
@@ -86,6 +96,14 @@ This project was designed to answer the core question:
 - **Shift Balance:** Day vs night split was nearly even, but certain hubs leaned heavily on night shifts.  
 - **Target Progress:** Current avg duration = 20.88 days vs target 17.75 (still above goal).  
 - LATAM and APAC hubs consistently performed below the global average movement duration, making them the most time-efficient regions despite lower volumes
+
+![My Image](https://github.com/R887645/-Maritime-Terminal-Operations-Analysis/blob/main/Screenshot%202026-04-16%20065605.png?raw=true)
+
+![My Image](https://github.com/R887645/-Maritime-Terminal-Operations-Analysis/blob/main/Screenshot%202026-04-16%20065704.png?raw=true)
+
+![My Image](https://github.com/R887645/-Maritime-Terminal-Operations-Analysis/blob/main/Screenshot%202026-04-16%20065906.png?raw=true)
+
+![My Image](https://github.com/R887645/-Maritime-Terminal-Operations-Analysis/blob/main/Screenshot%202026-04-16%20072810.png?raw=true)
 
 ---
 
